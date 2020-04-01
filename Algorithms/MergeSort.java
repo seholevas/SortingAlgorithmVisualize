@@ -1,3 +1,5 @@
+package Algorithms;
+
 class MergeSort implements SortingAlgorithm<int[]> {
     public void merge(int[] nums, int start, int end) {
         if (start < end) {
