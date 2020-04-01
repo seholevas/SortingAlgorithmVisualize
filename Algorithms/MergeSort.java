@@ -68,17 +68,17 @@ class MergeSort implements SortingAlgorithm<int[]> {
         }
     }
 
-// public static void main(String args[])
-// {
-//     int[] nums = {4,3,2,5,10,6,3};
-//     MergeSort ms = new MergeSort();
-//     ms.merge(nums, 0, nums.length - 1);
+public static void main(String args[])
+{
+    int[] nums = {4,3,2,5,10,6,3};
+    MergeSort ms = new MergeSort();
+    ms.merge(nums, 0, nums.length - 1);
     
-//     for(int i = 0; i < nums.length; i++)
-//     {
-//         System.out.println(nums[i]);
-//     }
-// }
+    for(int i = 0; i < nums.length; i++)
+    {
+        System.out.println(nums[i]);
+    }
+}
 
 
     }

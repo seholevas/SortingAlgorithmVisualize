@@ -4,12 +4,13 @@ class QuickSort
 {
     public int partition(int[] array, int pivot, int left_index, int right_index)
     {
-        while(left_index < right_index)
+        while(left_index <= right_index)
         {
-            while( pivot > array[left_index])
+            while( pivot >= array[left_index])
             {
                 left_index++;
             }
+
             while(pivot < array[right_index])
             {
                 right_index--;
@@ -17,7 +18,7 @@ class QuickSort
 
             if(left_index <= right_index)
             {
-            swap(array, left_index, right_index);
+                swap(array, left_index, right_index);
             }
         }
         return left_index;
@@ -46,7 +47,7 @@ class QuickSort
 
     public static void main (String args[])
     {
-        int [] array = {3,12,13,2,5,7,1,};
+        int [] array = {3,12,13,2,5,7,1,12};
         QuickSort qs = new QuickSort();
         qs.quick_sort(array, 0, array.length - 1);
         
